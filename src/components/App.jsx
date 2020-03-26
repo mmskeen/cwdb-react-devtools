@@ -5,7 +5,13 @@ import Avatar from "./Avatar";
 
 function App() {
   const cards = contacts.map(c => (
-    <Card name={c.name} img={c.imgURL} tel={c.phone} email={c.email} />
+    <Card
+      key={c.id}
+      name={c.name}
+      img={c.imgURL}
+      tel={c.phone}
+      email={c.email}
+    />
   ));
   return (
     <div>
